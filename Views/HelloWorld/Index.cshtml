@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "My first View";
+}
+
+<h2>La mia pirma vista ASP .NET</h2>
+
+<p>Ciao dalla mia prima vista su ASP .NET!</p>
+
+<h3>Inserisci il tuo nome:</h3>
+<form asp-controller="HelloWorld" asp-action="Welcome" method="get">
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name" required />
+    <button type="submit">Invia</button>
+</form>
